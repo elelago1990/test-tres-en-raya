@@ -1,5 +1,6 @@
 const assert = require('assert')
-const {hayGanador} = require('../tablero')
+const {hayGanador, hayHueco} = require('../tablero')
+
 
 describe("Determina el ganador", function () {
     
@@ -42,4 +43,15 @@ describe("Determina el ganador", function () {
             [1,1,0]
         ]), 2)
     })
+})
+
+describe("Hay hueco", function(){
+    assert.equal(hayHueco([
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+    ], 0), 0), true)
+
+})
+
 })

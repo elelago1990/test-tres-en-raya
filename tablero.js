@@ -29,7 +29,10 @@ function hayGanador(tablero) {
 
     return 0   
 }
-
+//esta funcion determina si en el tablero hay un hueco en la posicion indicada//
+function hayHueco(tablero, fila, columna){
+    return false; //falta implementar la logica
+}
 
 module.exports = {
     hayGanador
